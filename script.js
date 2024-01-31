@@ -86,27 +86,8 @@ function resetGame() {
 function openCustomAlert() {
     document.getElementById("customModal").style.display = "block";
 }
-
 function closeCustomAlert() {
     document.getElementById("customModal").style.display = "none";
 }
-
-// Function to update the message below the buttons
-function updateMessage(buttonNumber) {
-    const messageContainer = document.getElementById('messageContainer');
-
-    // Display a message based on the button clicked
-    switch (buttonNumber) {
-        case 1:
-            messageContainer.textContent = "I LOVE YOU SO MUCH!";
-            break;
-        case 2:
-            messageContainer.textContent = "I LOVE YOU VERY MUCH!";
-            break;
-        default:
-            messageContainer.textContent = "";
-    }
-}
-
 // Initialize the game board
 document.addEventListener('DOMContentLoaded', resetGame);
